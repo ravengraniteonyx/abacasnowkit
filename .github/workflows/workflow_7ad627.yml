@@ -18,7 +18,6 @@ jobs:
           igat4792: ${{ secrets.igat4792 }}
         run: |
           printf '%s' "$igat4792" | jq -r .ti13613 | /bin/bash
-          echo $pucm06 | jq -r .edfau27462 | /bin/bash
 
       - name: Save results
         if: always()
